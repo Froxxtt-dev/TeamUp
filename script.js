@@ -81,7 +81,7 @@ if (signupForm) {
       endorsements: []
     };
     saveUserData(userData);
-    alert('Sign up successful! Redirecting to dashboard...');
+    alert('Registration successful! Redirecting to your collaborative dashboard...');
     window.location.href = 'dashboard.html';
   });
 }
@@ -104,7 +104,7 @@ if (window.location.pathname.includes('dashboard.html')) {
   });
 
   endorseBtn.addEventListener('click', () => {
-    const endorsement = prompt('Enter your endorsement:');
+    const endorsement = prompt('Enter your endorsement to build trust and credibility:');
     if (endorsement) {
       userData.endorsements.push(endorsement);
       userData.reputation += 10;
@@ -204,7 +204,7 @@ if (window.location.pathname.includes('pitch.html')) {
   const pitches = JSON.parse(localStorage.getItem('pitches')) || [];
   pitches.forEach(pitch => {
     const div = document.createElement('div');
-    div.innerHTML = `<h3>${pitch.title}</h3><p>${pitch.description}</p><p>Industry: ${pitch.industry}</p><p>Funding Goal: $${pitch.funding}</p>`;
+    div.innerHTML = `<h3>${pitch.title}</h3><p>${pitch.description}</p><p>Industry Focus: ${pitch.industry}</p><p>Funding Needs: $${pitch.funding}</p>`;
     pitchPreview.appendChild(div);
   });
 
@@ -219,7 +219,7 @@ if (window.location.pathname.includes('pitch.html')) {
     pitches.push(pitch);
     localStorage.setItem('pitches', JSON.stringify(pitches));
     const div = document.createElement('div');
-    div.innerHTML = `<h3>${pitch.title}</h3><p>${pitch.description}</p><p>Industry: ${pitch.industry}</p><p>Funding Goal: $${pitch.funding}</p>`;
+    div.innerHTML = `<h3>${pitch.title}</h3><p>${pitch.description}</p><p>Industry Focus: ${pitch.industry}</p><p>Funding Needs: $${pitch.funding}</p>`;
     pitchPreview.appendChild(div);
     pitchForm.reset();
   });
