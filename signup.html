@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeamUp - Sign Up</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="fade-in-header">
+    <nav class="navbar">
+      <div class="logo">✦ TeamUp</div>
+      <div class="spacer"></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="pitch.html">Pitch Builder</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="dashboard.html" class="btn-find-partner">Find a Partner</a></li>
+      </ul>
+      <div class="menu-toggle">☰</div>
+    </nav>
+  </header>
+
+  <section id="signup" class="signup-section">
+    <div class="signup-content">
+      <h1 class="fade-in">Join TeamUp</h1>
+      <p class="fade-in">Create your profile to start collaborating and turning your ideas into reality.</p>
+      <form id="signup-form" class="fade-in">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Create a password" required>
+        </div>
+        <div class="form-group">
+          <label for="skills">Skills (comma-separated)</label>
+          <input type="text" id="skills" name="skills" placeholder="e.g., JavaScript, Marketing, Design">
+        </div>
+        <div class="form-group">
+          <label for="experience">Experience</label>
+          <textarea id="experience" name="experience" placeholder="Describe your experience" rows="4"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="interests">Project Interests</label>
+          <textarea id="interests" name="interests" placeholder="What types of projects are you interested in?" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn-join">Sign Up</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="fade-in-footer">
+    <div class="footer-content">
+      <div class="footer-logo">✦ TeamUp</div>
+      <ul class="footer-links">
+        <li><a href="#" title="Learn about our products">Product</a></li>
+        <li><a href="#" title="Explore helpful resources">Resources</a></li>
+        <li><a href="#" title="About our company">Company</a></li>
+        <li><a href="#" title="Upgrade to premium">Premium</a></li>
+        <li><a href="#" title="View our privacy policy">Privacy Policy</a></li>
+        <li><a href="#" title="Get in touch with us">Contact Us</a></li>
+      </ul>
+      <div class="newsletter">
+        <h4>Join Newsletter</h4>
+        <form>
+          <input type="email" placeholder="Enter email here" required>
+          <button type="submit" title="Subscribe to our newsletter">Subscribe</button>
+        </form>
+      </div>
+      <div class="social-links">
+        <h4>Connect with us</h4>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" title="Follow us on Facebook" class="bounce">f</a>
+          <a href="https://youtube.com" target="_blank" title="Watch our videos on YouTube" class="bounce">▶</a>
+          <a href="https://instagram.com" target="_blank" title="Follow us on Instagram" class="bounce">📷</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" title="Back to Top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
