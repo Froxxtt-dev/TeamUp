@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TeamUp - Dashboard</title>
+  <title>TeamUp - Team Dashboard</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
@@ -17,7 +17,7 @@
         <li><a href="signup.html">Sign Up</a></li>
         <li><a href="pitch.html">Pitch Builder</a></li>
         <li><a href="#">Login</a></li>
-        <li><a href="dashboard.html" class="btn-find-partner">Find a Partner</a></li>
+        <li><a href="dashboard.html" class="btn-find-partner">Find Collaborators</a></li>
       </ul>
       <div class="menu-toggle">☰</div>
     </nav>
@@ -25,18 +25,18 @@
 
   <section id="dashboard" class="dashboard-section">
     <div class="dashboard-content">
-      <h1 class="fade-in">Your Team Dashboard</h1>
+      <h1 class="fade-in">Your Collaborative Dashboard</h1>
 
       <!-- Profile and Endorsements -->
       <div class="profile-section fade-in">
-        <h2>Your Profile</h2>
+        <h2>Profile Overview</h2>
         <div class="profile-details">
           <p><strong>Name:</strong> <span id="profile-name">Loading...</span></p>
           <p><strong>Skills:</strong> <span id="profile-skills">Loading...</span></p>
           <p><strong>Reputation Score:</strong> <span id="reputation-score">0</span></p>
         </div>
         <div class="endorsements">
-          <h3>Endorsements</h3>
+          <h3>Endorsements and Credibility</h3>
           <ul id="endorsement-list">
             <!-- Endorsements will be populated via JavaScript -->
           </ul>
@@ -46,10 +46,10 @@
 
       <!-- Team Formation -->
       <div class="team-formation fade-in">
-        <h2>Find Collaborators</h2>
+        <h2>Search for Collaborators</h2>
         <form id="search-collaborators">
           <div class="form-group">
-            <label for="search-skills">Search by Skills</label>
+            <label for="search-skills">Search by Specific Skills or Expertise</label>
             <input type="text" id="search-skills" name="search-skills" placeholder="e.g., JavaScript, Marketing">
           </div>
           <button type="submit" class="btn-join">Search</button>
@@ -61,7 +61,7 @@
 
       <!-- Task Management -->
       <div class="task-management fade-in">
-        <h2>Task Management</h2>
+        <h2>Project and Task Tracking</h2>
         <form id="add-task">
           <div class="form-group">
             <label for="task-name">Task Name</label>
@@ -80,13 +80,13 @@
 
       <!-- Messaging -->
       <div class="messaging fade-in">
-        <h2>Messaging</h2>
+        <h2>Real-Time Messaging</h2>
         <div class="chat-box">
           <div id="chat-messages">
             <!-- Messages will be populated via JavaScript -->
           </div>
           <form id="chat-form">
-            <input type="text" id="chat-input" placeholder="Type your message..." required>
+            <input type="text" id="chat-input" placeholder="Initiate a chat..." required>
             <button type="submit" class="btn-join">Send</button>
           </form>
         </div>
@@ -94,7 +94,7 @@
 
       <!-- Advisor Booking -->
       <div class="advisor-booking fade-in">
-        <h2>Book an Advisor</h2>
+        <h2>Book an Advisor for Mentorship</h2>
         <form id="advisor-search">
           <div class="form-group">
             <label for="advisor-expertise">Expertise Needed</label>
@@ -133,7 +133,7 @@
         </form>
       </div>
       <div class="social-links">
-        <h4>Connect with us</h4>
+        <h4>Connect with Us</h4>
         <div class="social-icons">
           <a href="https://facebook.com" target="_blank" title="Follow us on Facebook" class="bounce">f</a>
           <a href="https://youtube.com" target="_blank" title="Watch our videos on YouTube" class="bounce">▶</a>
