@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeamUp - Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="fade-in-header">
+    <nav class="navbar">
+      <div class="logo">✦ TeamUp</div>
+      <div class="spacer"></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="pitch.html">Pitch Builder</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="dashboard.html" class="btn-find-partner">Find a Partner</a></li>
+      </ul>
+      <div class="menu-toggle">☰</div>
+    </nav>
+  </header>
+
+  <section id="dashboard" class="dashboard-section">
+    <div class="dashboard-content">
+      <h1 class="fade-in">Your Team Dashboard</h1>
+
+      <!-- Profile and Endorsements -->
+      <div class="profile-section fade-in">
+        <h2>Your Profile</h2>
+        <div class="profile-details">
+          <p><strong>Name:</strong> <span id="profile-name">Loading...</span></p>
+          <p><strong>Skills:</strong> <span id="profile-skills">Loading...</span></p>
+          <p><strong>Reputation Score:</strong> <span id="reputation-score">0</span></p>
+        </div>
+        <div class="endorsements">
+          <h3>Endorsements</h3>
+          <ul id="endorsement-list">
+            <!-- Endorsements will be populated via JavaScript -->
+          </ul>
+          <button id="endorse-btn" class="btn-join">Endorse a Collaborator</button>
+        </div>
+      </div>
+
+      <!-- Team Formation -->
+      <div class="team-formation fade-in">
+        <h2>Find Collaborators</h2>
+        <form id="search-collaborators">
+          <div class="form-group">
+            <label for="search-skills">Search by Skills</label>
+            <input type="text" id="search-skills" name="search-skills" placeholder="e.g., JavaScript, Marketing">
+          </div>
+          <button type="submit" class="btn-join">Search</button>
+        </form>
+        <div id="collaborator-results">
+          <!-- Results will be populated via JavaScript -->
+        </div>
+      </div>
+
+      <!-- Task Management -->
+      <div class="task-management fade-in">
+        <h2>Task Management</h2>
+        <form id="add-task">
+          <div class="form-group">
+            <label for="task-name">Task Name</label>
+            <input type="text" id="task-name" name="task-name" placeholder="Enter task name" required>
+          </div>
+          <div class="form-group">
+            <label for="task-deadline">Deadline</label>
+            <input type="date" id="task-deadline" name="task-deadline" required>
+          </div>
+          <button type="submit" class="btn-join">Add Task</button>
+        </form>
+        <ul id="task-list">
+          <!-- Tasks will be populated via JavaScript -->
+        </ul>
+      </div>
+
+      <!-- Messaging -->
+      <div class="messaging fade-in">
+        <h2>Messaging</h2>
+        <div class="chat-box">
+          <div id="chat-messages">
+            <!-- Messages will be populated via JavaScript -->
+          </div>
+          <form id="chat-form">
+            <input type="text" id="chat-input" placeholder="Type your message..." required>
+            <button type="submit" class="btn-join">Send</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Advisor Booking -->
+      <div class="advisor-booking fade-in">
+        <h2>Book an Advisor</h2>
+        <form id="advisor-search">
+          <div class="form-group">
+            <label for="advisor-expertise">Expertise Needed</label>
+            <select id="advisor-expertise" name="advisor-expertise">
+              <option value="marketing">Marketing</option>
+              <option value="business">Business Strategy</option>
+              <option value="finance">Finance</option>
+              <option value="legal">Legal</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-join">Search Advisors</button>
+        </form>
+        <div id="advisor-results">
+          <!-- Advisor results will be populated via JavaScript -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="fade-in-footer">
+    <div class="footer-content">
+      <div class="footer-logo">✦ TeamUp</div>
+      <ul class="footer-links">
+        <li><a href="#" title="Learn about our products">Product</a></li>
+        <li><a href="#" title="Explore helpful resources">Resources</a></li>
+        <li><a href="#" title="About our company">Company</a></li>
+        <li><a href="#" title="Upgrade to premium">Premium</a></li>
+        <li><a href="#" title="View our privacy policy">Privacy Policy</a></li>
+        <li><a href="#" title="Get in touch with us">Contact Us</a></li>
+      </ul>
+      <div class="newsletter">
+        <h4>Join Newsletter</h4>
+        <form>
+          <input type="email" placeholder="Enter email here" required>
+          <button type="submit" title="Subscribe to our newsletter">Subscribe</button>
+        </form>
+      </div>
+      <div class="social-links">
+        <h4>Connect with us</h4>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" title="Follow us on Facebook" class="bounce">f</a>
+          <a href="https://youtube.com" target="_blank" title="Watch our videos on YouTube" class="bounce">▶</a>
+          <a href="https://instagram.com" target="_blank" title="Follow us on Instagram" class="bounce">📷</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" title="Back to Top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
